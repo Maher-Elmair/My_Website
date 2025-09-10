@@ -404,6 +404,7 @@ h4 {
             .home-description {
               margin-bottom: var(--mb-3);
               // line-height: 1.6;
+              width: 85%;
             }
             .button {
               background-color: var(--first-color);
@@ -471,6 +472,9 @@ h4 {
       @include media("<=tablet") {
         .home-container {
           .home-content {
+            .home-data .home-description {
+              width: 100%;
+            }
             .home-img {
               .home-blob {
                 width: 100%;
@@ -561,7 +565,6 @@ h4 {
     .skills {
       padding-top: 4rem;
       .skills-container {
-        // width: 684px;
         display: grid;
         gap: 1.5rem;
         grid-template-columns: repeat(2, 1fr);
@@ -600,10 +603,6 @@ h4 {
               display: flex;
               justify-content: space-between;
               margin-bottom: var(--mb-0-5);
-              .skills__name {
-                font-size: var(--normal-font-size);
-                font-weight: var(--font-medium);
-              }
             }
             .skills-bar {
               background-color: var(--first-color-lighter);
@@ -613,26 +612,50 @@ h4 {
                 background-color: var(--first-color);
                 height: 5px;
               }
+              /* Frontend */
               .skills-html {
-                width: 90%;
+                width: 95%;
               }
               .skills-css {
-                width: 85%;
+                width: 95%;
               }
               .skills-sass {
-                width: 80%;
+                width: 90%;
               }
               .skills-js {
+                width: 75%;
+              }
+              .skills-react {
+                width: 70%;
+              }
+              .skills-ts {
                 width: 60%;
               }
+              /* Designer */
               .skills-figma {
-                width: 80%;
+                width: 85%;
+              }
+              .skills-canva {
+                width: 85%;
               }
               .skills-photoshop {
                 width: 80%;
               }
               .skills-illustrator {
                 width: 60%;
+              }
+              /* Soft Skills */
+              .skills-communication {
+                width: 90%;
+              }
+              .skills-teamwork {
+                width: 85%;
+              }
+              .skills-problem {
+                width: 80%;
+              }
+              .skills-time {
+                width: 75%;
               }
             }
           }
@@ -790,6 +813,92 @@ h4 {
       }
     }
     /*! end services */
+    /*! start qualification */
+    .qualification {
+      padding: 6rem 0 1rem;
+      &-tabs {
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: var(--mb-2);
+      }
+      &-button {
+        font-size: var(--h3-font-size);
+        font-weight: var(--font-medium);
+        cursor: pointer;
+        &:hover {
+          color: var(--first-color);
+        }
+        &.qualification-active {
+          color: var(--first-color);
+        }
+      }
+      &-icon {
+        font-size: 1.8rem;
+        margin-right: var(--mb-0-25);
+      }
+      &-data {
+        display: grid;
+        grid-template-columns: 1fr max-content 1fr;
+        column-gap: 1.5rem;
+      }
+      &-title {
+        font-size: var(--normal-font-size);
+        font-weight: var(--font-medium);
+      }
+      &-subtitle {
+        display: inline-block;
+        font-size: var(--small-font-size);
+        margin-bottom: var(--mb-1);
+      }
+      &-calendar {
+        font-size: var(--smaller-font-size);
+        color: var(--text-color-light);
+      }
+      &-rounder {
+        display: inline-block;
+        width: 13px;
+        height: 13px;
+        background-color: var(--first-color);
+        border-radius: 50%;
+      }
+      &-line {
+        display: block;
+        width: 1px;
+        height: 100%;
+        background-color: var(--first-color);
+        transform: translate(6px, -7px);
+      }
+      [data-content] {
+        display: none;
+        &.qualification-active {
+          display: block;
+        }
+      }
+      @include media("<=350px") {
+        &-data {
+          gap: 0.5rem;
+          column-gap: 0.8rem;
+        }
+      }
+      @include media(">=568px") {
+        &-sections {
+          display: grid;
+          justify-content: center;
+        }
+      }
+      @include media(">=768px") {
+        &-tabs {
+          justify-content: center;
+        }
+        &-button {
+          margin: 0 var(--mb-1);
+        }
+        &-sections {
+          grid-template-columns: 0.5fr;
+        }
+      }
+    }
+    /*! end qualification */
     /*! start portfolio */
     .portfolio {
       padding-top: 4rem;
@@ -837,15 +946,15 @@ h4 {
           // padding-right: 1rem;
           background-color: transparent;
           color: var(--first-color);
-          .arrow-icon{
+          .arrow-icon {
             font-size: var(--h2-font-size);
           }
           &:hover {
             color: var(--first-color-alt);
-          .arrow-icon{
+            .arrow-icon {
               transform: translateX(0.5rem);
             }
-        }
+          }
         }
         .swiper-button-next:after,
         .swiper-button-prev:after {
@@ -1023,6 +1132,12 @@ h4 {
           }
           .button {
             @extend %btn;
+            padding: 1rem;
+            border: none;
+            outline-style: none;
+            &:hover {
+              cursor: pointer;
+            }
           }
         }
       }
@@ -1083,7 +1198,6 @@ h4 {
             .footer-social {
               font-size: 1.25rem;
               margin-right: var(--mb-1-5);
-
               &:hover {
                 color: var(--first-color-lighter);
               }
@@ -1113,10 +1227,6 @@ h4 {
     }
     /*! end footer */
   }
-  /*! start Portfolio */
-  // .Portfolio {
-  // }
-  /*! end Portfolio */
 }
 
 /*========== SCROLL UP ==========*/
@@ -1145,4 +1255,48 @@ h4 {
 .show-scroll {
   bottom: 5rem;
 }
+
+/* ================== TOAST CONTAINER ================== */
+.toast-container {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  background-color: var(--body-color);
+  padding: 1rem 1.5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  min-width: 280px;
+  max-width: 350px;
+  opacity: 0;
+  transform: translateX(120%);
+  pointer-events: none;
+  transition: all 0.4s ease;
+  z-index: 9999;
+
+  i {
+    font-size: 1.2rem;
+  }
+
+  &.success {
+    border-left: 5px solid #4caf50; // أخضر
+    color: #2e7d32; // أخضر غامق للنص
+  }
+
+  &.error {
+    border-left: 5px solid #f44336; // أحمر
+    color: #c62828; // أحمر غامق للنص
+  }
+
+  &.show {
+    opacity: 1;
+    transform: translateX(0);
+    pointer-events: auto;
+  }
+}
+
 /*! end code */

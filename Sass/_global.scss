@@ -24,11 +24,11 @@
 /*-------------------------SCROLL BAR------------------------*/
 
 ::-webkit-scrollbar {
-  width: .60rem;
+  width: 0.6rem;
 }
 
 ::-webkit-scrollbar-track {
-  width: .60rem;
+  width: 0.6rem;
   background-color: var(--scroll-bar-color);
   border-left: 0 solid none;
   border-right: 0 solid none;
@@ -40,7 +40,7 @@
   background-color: var(--scroll-thumb-color);
   width: 15% !important;
   height: 15% !important;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -49,7 +49,30 @@
   cursor: pointer;
 }
 
+input,
+textarea,
+select {
+  background-color: var(--input-color);
+  color: var(--text-color);
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  width: 100%;
+  transition: background-color 0.3s, color 0.3s;
 
+  // fix لكل الـ autofill
+  &:-webkit-autofill,
+  &:-webkit-autofill:hover,
+  &:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0 1000px var(--input-color) inset !important;
+    -webkit-text-fill-color: var(--text-color) !important;
+    transition: background-color 5000s ease-in-out 0s;
+  }
+
+  &:focus {
+    outline: none;
+    border: none;
+  }
+}
 
 /* end variables */
-
