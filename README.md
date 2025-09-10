@@ -1,4 +1,4 @@
-# 🧑‍🎨 My\_Website – Personal Portfolio
+# 🧑‍💻 Maher-Portfolio – Personal Portfolio
 
 A professional front-end developer portfolio to showcase my projects and services.
 The website is built with **HTML, CSS/Sass, JavaScript**, supports **Dark/Light mode**, and uses **Swiper.js** to display projects dynamically.
