@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", async function () {
 
   try {
     // 🔹 جلب بيانات المشاريع من JSON
-    const dataResponse = await fetch("../Data/projects.json");
+    const dataResponse = await fetch("Data/projects.json");
     const data = await dataResponse.json();
     const selectedProjects = data.selectedProjects;
     const repoImages = data.repoImages;
