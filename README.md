@@ -82,9 +82,9 @@ My_Website/
 
 ## 🚀 Live Demo
 
-- 🔗 [View Live Project](https://maher-elmair.github.io/Portfolio/)
+- 🔗 [View Live Project](https://maher-elmair.github.io/My_Website/)
 
-- 💡 [Bit.ly Short Link](https://bit.ly/maher-portfolio)
+- 💡 [Bit.ly Short Link](https://bit.ly/Maher-portfolio)
 
 ---
 
