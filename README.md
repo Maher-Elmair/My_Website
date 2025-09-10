@@ -9,7 +9,7 @@ The website is built with **HTML, CSS/Sass, JavaScript**, supports **Dark/Light 
 
 ### 🖥️ Desktop View
 
-![Desktop Preview](/assets/design/screencapture-My_Website.png)
+![Desktop Preview](/assets/design/screencapture-portfolio.png)
 
 ---
 
@@ -82,7 +82,9 @@ My_Website/
 
 ## 🚀 Live Demo
 
-🔗 [View Live Project](https://maher-elmair.github.io/My_Website/)
+- 🔗 [View Live Project](https://maher-elmair.github.io/Portfolio/)
+
+- 💡 [Bit.ly Short Link](https://bit.ly/maher-portfolio)
 
 ---
 
