@@ -21,13 +21,13 @@
     "klar"
   ],
   "repoImages": {
-    "Dine restaurant website": "../assets/images/Portfolio/Dine restaurant website_desktop-preview.jpg",
-    "Ecommerce product page": "../assets/images/Portfolio/ecommerce-product-page_desktop-preview.jpg",
-    "Huddle landing page with alternating feature blocks": "../assets/images/Portfolio/Huddle landing page_desktop-preview.jpg",
-    "Interactive-card-details-form": "../assets/images/Portfolio/interactive-card-details-form_desktop-preview.jpg",
-    "Manage-landing-page": "../assets/images/Portfolio/manage-landing-page _desktop-preview.jpg",
-    "Room-homepage": "../assets/images/Portfolio/room-homepage_desktop-preview.jpg",
-    "Scoot-multi-page-website": "../assets/images/Portfolio/Scoot-multi-page-website.jpg",
+    "Dine restaurant website": "assets/images/Portfolio/Dine restaurant website_desktop-preview.jpg",
+    "Ecommerce product page": "assets/images/Portfolio/ecommerce-product-page_desktop-preview.jpg",
+    "Huddle landing page with alternating feature blocks": "assets/images/Portfolio/Huddle landing page_desktop-preview.jpg",
+    "Interactive-card-details-form": "assets/images/Portfolio/interactive-card-details-form_desktop-preview.jpg",
+    "Manage-landing-page": "assets/images/Portfolio/manage-landing-page _desktop-preview.jpg",
+    "Room-homepage": "assets/images/Portfolio/room-homepage_desktop-preview.jpg",
+    "Scoot-multi-page-website": "assets/images/Portfolio/Scoot-multi-page-website.jpg",
     "Todo-App": "https://raw.githubusercontent.com/Maher-Elmair/Todo-App/main/design/desktop-preview.jpg",
     "Calculator-app": "https://raw.githubusercontent.com/Maher-Elmair/Calculator-app/refs/heads/main/design/desktop-preview.jpg",
     "Age-calculator-app": "https://raw.githubusercontent.com/Maher-Elmair/Age-calculator-app/refs/heads/main/design/desktop-preview.jpg",
@@ -39,5 +39,5 @@
     "Interactive-pricing-component": "https://raw.githubusercontent.com/Maher-Elmair/Interactive-pricing-component/refs/heads/main/design/desktop-preview.jpg",
     "Faq-accordion-card": "https://raw.githubusercontent.com/Maher-Elmair/Faq-accordion-card/refs/heads/main/design/desktop-preview.jpg"
   },
-  "portfolioFallbackImage": "../assets/images/Portfolio/avatars.jpg"
+  "portfolioFallbackImage": "assets/images/Portfolio/avatars.jpg"
 }
