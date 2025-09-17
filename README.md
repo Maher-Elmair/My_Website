@@ -95,6 +95,7 @@ My_Website/
 
 - 📫 [maher.elmair.dev@gmail.com](mailto:maher.elmair.dev@gmail.com)
 - 🔗 [LinkedIn](https://www.linkedin.com/in/maher-elmair)
+- ✖️ [X (Twitter)](https://x.com/Maher_Elmair)  
 - ❤️ Made with passion by [Maher Elmair](https://maher-elmair.github.io/My_Website)
 
 ---
