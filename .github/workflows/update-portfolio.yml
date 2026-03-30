@@ -1,0 +1,77 @@
+name: Update Portfolio Cache
+
+on:
+  # Runs automatically every day at midnight UTC
+  schedule:
+    - cron: "0 0 * * *"
+  # Allows manual trigger from GitHub Actions tab
+  workflow_dispatch:
+
+jobs:
+  update-cache:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: checkout the repo so we can write files to it
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # Step 2: fetch repos list from GitHub API using the secret token
+      - name: Fetch repositories from GitHub API
+        env:
+          GH_TOKEN: ${{ secrets.PORTFOLIO_TOKEN }}
+        run: |
+          curl -s \
+            -H "Authorization: token $GH_TOKEN" \
+            -H "Accept: application/vnd.github+json" \
+            "https://api.github.com/users/Maher-Elmair/repos?per_page=100&sort=updated" \
+            > Data/repos-cache.json
+
+          echo "Fetched $(cat Data/repos-cache.json | python3 -c 'import sys,json; print(len(json.load(sys.stdin)))') repos"
+
+      # Step 3: fetch languages for each selected project and save separately
+      - name: Fetch languages for each repo
+        env:
+          GH_TOKEN: ${{ secrets.PORTFOLIO_TOKEN }}
+        run: |
+          python3 << 'EOF'
+          import json, urllib.request, os
+
+          token = os.environ["GH_TOKEN"]
+          username = "Maher-Elmair"
+
+          # Load selected projects from projects.json
+          with open("Data/projects.json") as f:
+              config = json.load(f)
+          selected = config["selectedProjects"]
+
+          langs_map = {}
+          for repo_name in selected:
+              url = f"https://api.github.com/repos/{username}/{repo_name}/languages"
+              req = urllib.request.Request(url, headers={
+                  "Authorization": f"token {token}",
+                  "Accept": "application/vnd.github+json"
+              })
+              try:
+                  with urllib.request.urlopen(req) as res:
+                      langs_map[repo_name] = json.loads(res.read())
+                  print(f"  OK: {repo_name}")
+              except Exception as e:
+                  langs_map[repo_name] = {}
+                  print(f"  SKIP: {repo_name} — {e}")
+
+          with open("Data/langs-cache.json", "w") as f:
+              json.dump(langs_map, f, indent=2)
+
+          print(f"Done — saved {len(langs_map)} repos to langs-cache.json")
+          EOF
+
+      # Step 4: commit and push the updated cache files
+      - name: Commit updated cache
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add Data/repos-cache.json Data/langs-cache.json
+          git diff --staged --quiet \
+            && echo "No changes to commit" \
+            || (git commit -m "chore: update portfolio cache [skip ci]" && git push)
