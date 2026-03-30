@@ -1,25 +1,99 @@
 {
-  "Dine restaurant website": {},
-  "Ecommerce product page": {},
-  "Huddle landing page with alternating feature blocks": {},
+  "Headline-News": {
+    "TypeScript": 413344,
+    "CSS": 17937,
+    "JavaScript": 3760,
+    "HTML": 385
+  },
+  "Noqta-Marketplace": {
+    "TypeScript": 474034,
+    "CSS": 3736,
+    "JavaScript": 2090,
+    "HTML": 372
+  },
+  "AutoSkip-for-YouTube": {
+    "TypeScript": 101517,
+    "CSS": 7829,
+    "JavaScript": 2894,
+    "HTML": 357
+  },
+  "HabitFlow": {
+    "TypeScript": 287308,
+    "CSS": 14177,
+    "JavaScript": 6301,
+    "HTML": 358
+  },
+  "Snapgram-SocialApp": {
+    "TypeScript": 105145,
+    "CSS": 6999,
+    "JavaScript": 3450,
+    "HTML": 366
+  },
+  "Refined-Admin-Dashboard": {
+    "TypeScript": 285563,
+    "HTML": 1313,
+    "Dockerfile": 875,
+    "JavaScript": 415
+  },
+  "GitHub-Manager-Pro": {
+    "HTML": 170866
+  },
+  "prayers-timings": {
+    "JavaScript": 16245,
+    "CSS": 2149,
+    "HTML": 364
+  },
+  "ChronoTool": {
+    "JavaScript": 16985,
+    "CSS": 1763,
+    "HTML": 534
+  },
+  "calendar-app": {
+    "JavaScript": 8596,
+    "CSS": 7128,
+    "HTML": 424
+  },
+  "My_Website": {
+    "SCSS": 43582,
+    "CSS": 43280,
+    "HTML": 34875,
+    "JavaScript": 12498
+  },
+  "Todo-List-App": {
+    "JavaScript": 20024,
+    "CSS": 1851,
+    "HTML": 333
+  },
+  "Weather-App": {
+    "JavaScript": 14135,
+    "CSS": 3208,
+    "HTML": 2082
+  },
+  "Login-multi-auth": {
+    "JavaScript": 16041,
+    "CSS": 2251,
+    "HTML": 365
+  },
+  "MNTN": {
+    "SCSS": 22500,
+    "HTML": 18982,
+    "CSS": 12779,
+    "JavaScript": 2788
+  },
+  "klar": {
+    "HTML": 58302,
+    "CSS": 39405,
+    "SCSS": 34825,
+    "JavaScript": 1635
+  },
   "Space-tourism-multi-page-website": {
     "CSS": 39281,
     "SCSS": 32253,
     "HTML": 16005,
     "JavaScript": 5113
   },
-  "Interactive-card-details-form": {
-    "SCSS": 17958,
-    "CSS": 9300,
-    "HTML": 4674,
-    "JavaScript": 3261
-  },
-  "Manage-landing-page": {
-    "SCSS": 24574,
-    "HTML": 16948,
-    "CSS": 14565,
-    "JavaScript": 787
-  },
+  "Dine restaurant website": {},
+  "Ecommerce product page": {},
   "Room-homepage": {
     "SCSS": 16391,
     "CSS": 7126,
@@ -49,6 +123,19 @@
     "CSS": 6865,
     "HTML": 3684,
     "JavaScript": 3204
+  },
+  "Huddle landing page with alternating feature blocks": {},
+  "Interactive-card-details-form": {
+    "SCSS": 17958,
+    "CSS": 9300,
+    "HTML": 4674,
+    "JavaScript": 3261
+  },
+  "Manage-landing-page": {
+    "SCSS": 24574,
+    "HTML": 16948,
+    "CSS": 14565,
+    "JavaScript": 787
   },
   "Single-page-design-portfolio": {
     "SCSS": 18418,
@@ -85,17 +172,5 @@
     "CSS": 5483,
     "HTML": 3684,
     "JavaScript": 593
-  },
-  "MNTN": {
-    "SCSS": 22500,
-    "HTML": 18982,
-    "CSS": 12779,
-    "JavaScript": 2788
-  },
-  "klar": {
-    "HTML": 58302,
-    "CSS": 39405,
-    "SCSS": 34825,
-    "JavaScript": 1635
   }
 }
