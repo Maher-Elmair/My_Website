@@ -1,0 +1,101 @@
+{
+  "Dine restaurant website": {},
+  "Ecommerce product page": {},
+  "Huddle landing page with alternating feature blocks": {},
+  "Space-tourism-multi-page-website": {
+    "CSS": 39281,
+    "SCSS": 32253,
+    "HTML": 16005,
+    "JavaScript": 5113
+  },
+  "Interactive-card-details-form": {
+    "SCSS": 17958,
+    "CSS": 9300,
+    "HTML": 4674,
+    "JavaScript": 3261
+  },
+  "Manage-landing-page": {
+    "SCSS": 24574,
+    "HTML": 16948,
+    "CSS": 14565,
+    "JavaScript": 787
+  },
+  "Room-homepage": {
+    "SCSS": 16391,
+    "CSS": 7126,
+    "HTML": 6253,
+    "JavaScript": 2781
+  },
+  "Scoot-multi-page-website": {
+    "CSS": 77937,
+    "HTML": 60851,
+    "SCSS": 44005,
+    "JavaScript": 2203
+  },
+  "Todo-App": {
+    "SCSS": 18872,
+    "CSS": 11557,
+    "JavaScript": 4561,
+    "HTML": 3895
+  },
+  "Calculator-app": {
+    "SCSS": 18535,
+    "CSS": 11016,
+    "HTML": 3868,
+    "JavaScript": 3853
+  },
+  "Age-calculator-app": {
+    "SCSS": 15726,
+    "CSS": 6865,
+    "HTML": 3684,
+    "JavaScript": 3204
+  },
+  "Single-page-design-portfolio": {
+    "SCSS": 18418,
+    "CSS": 9922,
+    "HTML": 6838,
+    "JavaScript": 615
+  },
+  "Advice-generator-app": {
+    "SCSS": 12422,
+    "CSS": 3734,
+    "HTML": 2323,
+    "JavaScript": 607
+  },
+  "Pricing-component-with-toggle": {
+    "SCSS": 15177,
+    "CSS": 6615,
+    "HTML": 4391,
+    "JavaScript": 1924
+  },
+  "Expenses-chart-component": {
+    "SCSS": 16530,
+    "CSS": 7161,
+    "HTML": 2476,
+    "JavaScript": 1441
+  },
+  "Interactive-pricing-component": {
+    "SCSS": 19055,
+    "CSS": 8964,
+    "HTML": 4047,
+    "JavaScript": 3522
+  },
+  "Faq-accordion-card": {
+    "SCSS": 14257,
+    "CSS": 5483,
+    "HTML": 3684,
+    "JavaScript": 593
+  },
+  "MNTN": {
+    "SCSS": 22500,
+    "HTML": 18982,
+    "CSS": 12779,
+    "JavaScript": 2788
+  },
+  "klar": {
+    "HTML": 58302,
+    "CSS": 39405,
+    "SCSS": 34825,
+    "JavaScript": 1635
+  }
+}
