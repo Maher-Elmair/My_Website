@@ -128,23 +128,30 @@ document.addEventListener("DOMContentLoaded", () => {
 })
 /*==================== ACCORDION SKILLS ====================*/
 
-const skillsContent = document.getElementsByClassName("skills-content"),
-    skillsHeader = document.querySelectorAll(".skills-header");
+const skillsContent = document.getElementsByClassName("skills-content");
+const skillsHeader = document.querySelectorAll(".skills-header");
 
 function toggleSkills() {
-    let itemClass = this.parentNode.className
+    const parentEl = this.parentNode;
+    // Check if the clicked item is already open before closing everything
+    const isAlreadyOpen = parentEl.classList.contains("skills-open");
 
-    for (i = 0; i < skillsContent.length; i++) {
-        skillsContent[i].className = "skills-content skills-close "
+    // Close all sections
+    for (let i = 0; i < skillsContent.length; i++) {
+        skillsContent[i].classList.remove("skills-open");
+        skillsContent[i].classList.add("skills-close");
     }
-    if (itemClass === "skills-content skills-close ") {
-        this.parentNode.className = "skills-content skills-open "
+
+    // If it was closed, open it — if it was already open, leave it closed
+    if (!isAlreadyOpen) {
+        parentEl.classList.remove("skills-close");
+        parentEl.classList.add("skills-open");
     }
 }
 
 skillsHeader.forEach((el) => {
-    el.addEventListener("click", toggleSkills)
-})
+    el.addEventListener("click", toggleSkills);
+});
 
 /*==================== SERVICES MODAL ====================*/
 const modalViews = document.querySelectorAll(".services-modal"),
