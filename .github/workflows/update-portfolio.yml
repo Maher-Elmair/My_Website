@@ -1,9 +1,10 @@
 name: Update Portfolio Cache
 
 on:
-  # Runs automatically every day at midnight UTC
-  schedule:
-    - cron: "0 0 * * *"
+  # Runs automatically when projects.json is updated
+  push:
+    paths:
+      - "Data/projects.json"
   # Allows manual trigger from GitHub Actions tab
   workflow_dispatch:
 
@@ -26,7 +27,7 @@ jobs:
           curl -s \
             -H "Authorization: token $GH_TOKEN" \
             -H "Accept: application/vnd.github+json" \
-            "https://api.github.com/users/Maher-Elmair/repos?per_page=100&sort=updated" \
+            "https://api.github.com/users/Maher-Elmair/repos?per_page=100&sort=full_name" \
             > Data/repos-cache.json
 
           echo "Fetched $(cat Data/repos-cache.json | python3 -c 'import sys,json; print(len(json.load(sys.stdin)))') repos"
@@ -42,7 +43,6 @@ jobs:
           token = os.environ["GH_TOKEN"]
           username = "Maher-Elmair"
 
-          # Load selected projects from projects.json
           with open("Data/projects.json") as f:
               config = json.load(f)
           selected = config["selectedProjects"]
